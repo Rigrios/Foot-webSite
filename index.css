@@ -83,7 +83,7 @@ body {
   max-width: 1440px;
   height: 1021px;
 
-  background-image: url(./img/header_img.jpg);
+  background-image: url(/img/header_img.jpg);
   background-repeat: no-repeat;
   margin: 0 auto;
 }
