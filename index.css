@@ -75,7 +75,9 @@ h6 {
 }
 /*--------------------*/
 
-
+body {
+    background-color: #d0cfcf;
+}
 
 .header {
   max-width: 1440px;
