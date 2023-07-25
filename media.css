@@ -1,0 +1,130 @@
+@media (max-width: 992px) {
+    .header {
+        background-position: -500px 0;
+       
+        
+    }
+    .welcom {
+        display: none;
+    }
+    .nav-bar__menu {
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000000dd;
+        backdrop-filter: blur(25px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s;
+        z-index: 2;
+    }
+    .activeMenu {
+        top: 0;
+    }
+    .phone {
+        display: none;
+    }
+    .line {
+        display: none;
+    }
+    .nav-bar__basket {
+        display: none;
+    }
+    .nav-bar__button {
+        display: none;
+    }
+    .nav-bar__menu-list {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+        
+        text-align: center;
+    }
+    .nav-bar__menu-link a {
+        font-size: 20px;
+    }
+ 
+    .burger {
+        width: 40px;
+        height: 30px;
+        position: relative;
+        cursor: pointer;
+        /* border: 1px solid #f3f3f3; */
+        z-index: 2;
+    }
+    .burger::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+    }
+    .burger span {
+        position: absolute;
+        top: 13px;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+    }
+    .burger::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+    }
+    .nav {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        z-index: 2;
+        background-color: #000000ef;
+        justify-content: space-between;
+        padding: 0 25px;
+        backdrop-filter: blur(10px);
+    }
+    .square {
+        width: 32.06px;
+        height: 32.06px;
+    }
+    .square2 {
+        width: 32.06px;
+        height: 32.06px;
+    }
+    .welcom-phone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 50%;
+        
+    }
+    .title-phone {
+        transform: scale(1.4);
+        
+    }
+    .title-phone2 {
+        transform: scale(1.6);
+        
+    }
+    .welcom-phone p {
+        color: #fff;
+    }
+    .button-phone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header__kard {
+        top: 70%;  
+    }
+}

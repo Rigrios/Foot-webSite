@@ -74,16 +74,179 @@ h6 {
   font-weight: inherit;
 }
 /*--------------------*/
-
+/* ------FONT-------- */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+/* OPEN SANS -font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Open Sans', sans-serif;  */
+@import url("https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* TINOS-----font-family: 'Tinos', serif; */
 body {
-    background-color: #d0cfcf;
+  font-family: "Open Sans", sans-serif;
 }
 
 .header {
   max-width: 1440px;
   height: 1021px;
-
+  padding: 50px 20px;
   background-image: url(./img/header_img.jpg);
   background-repeat: no-repeat;
   margin: 0 auto;
+  /* border: 1px solid #000; */
+  position: relative;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo {
+  display: flex;
+}
+.square {
+  width: 48.06px;
+  height: 48.06px;
+  border: 3px solid #ff7400;
+  transform: rotate(45deg);
+}
+.square2 {
+  width: 48.06px;
+  height: 48.06px;
+  border: 3px solid #ff7400;
+  transform: rotate(45deg) translate(-10px, 10px);
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+}
+.nav-bar__menu {
+}
+.nav-bar__menu-list {
+  display: flex;
+  gap: 20px;
+}
+.nav-bar__menu-link {
+  font-weight: 700;
+}
+
+.nav-bar__menu-link a {
+  color: #fff;
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.line {
+  width: 51px;
+  border: 1px solid #ffffff;
+  transform: rotate(90deg);
+}
+.phone {
+  text-align: center;
+  line-height: 20px;
+}
+.phone span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.button {
+  width: 157px;
+  height: 47px;
+  background-color: #ff7400;
+  color: #fff;
+  font-size: 14px;
+}
+
+.welcom {
+  font-family: "Tinos", serif;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  margin: 220px 150px;
+  /* margin: 200px; */
+  
+}
+
+.welcom div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.title {
+  color: #d67e35;
+  font-family: "Tinos", serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.linear {
+  width: 61px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.linear2 {
+  width: 61px;
+  height: 2px;
+  background-color: #fff;
+}
+.home-class-foot p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.welcom-phone {
+  display: none;
+  
+}
+
+.header__kard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  
+
+}
+
+.kard {
+  width: 349px;
+  height: 328px;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.kard__menu-text {
+  color: #2C2C2C;
+  font-family: 'Tinos', serif;
+  font-size: 26px;
+
+}
+
+.kard p {
+  color: #656363;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 400;
+  font-family: 'Tinos', serif;
+
 }
