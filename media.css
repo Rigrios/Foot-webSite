@@ -1,130 +1,217 @@
 @media (max-width: 992px) {
-    .header {
-        background-position: -500px 0;
-       
-        
-    }
-    .welcom {
-        display: none;
-    }
-    .nav-bar__menu {
-        position: fixed;
-        top: -100vh;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: #000000dd;
-        backdrop-filter: blur(25px);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.2s;
-        z-index: 2;
-    }
-    .activeMenu {
-        top: 0;
-    }
-    .phone {
-        display: none;
-    }
-    .line {
-        display: none;
-    }
-    .nav-bar__basket {
-        display: none;
-    }
-    .nav-bar__button {
-        display: none;
-    }
-    .nav-bar__menu-list {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 50px;
-        
-        text-align: center;
-    }
-    .nav-bar__menu-link a {
-        font-size: 20px;
-    }
- 
-    .burger {
-        width: 40px;
-        height: 30px;
-        position: relative;
-        cursor: pointer;
-        /* border: 1px solid #f3f3f3; */
-        z-index: 2;
-    }
-    .burger::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 3px;
-        background-color: #fff;
-    }
-    .burger span {
-        position: absolute;
-        top: 13px;
-        width: 100%;
-        height: 3px;
-        background-color: #fff;
-    }
-    .burger::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 3px;
-        background-color: #fff;
-    }
-    .nav {
-        position: fixed;
-        top: 0px;
-        left: 0;
-        width: 100%;
-        height: 80px;
-        z-index: 2;
-        background-color: #000000ef;
-        justify-content: space-between;
-        padding: 0 25px;
-        backdrop-filter: blur(10px);
-    }
-    .square {
-        width: 32.06px;
-        height: 32.06px;
-    }
-    .square2 {
-        width: 32.06px;
-        height: 32.06px;
-    }
-    .welcom-phone {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 15px;
-        margin-top: 50%;
-        
-    }
-    .title-phone {
-        transform: scale(1.4);
-        
-    }
-    .title-phone2 {
-        transform: scale(1.6);
-        
-    }
-    .welcom-phone p {
-        color: #fff;
-    }
-    .button-phone {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .header__kard {
-        top: 70%;  
-    }
+  .container {
+    padding: 0 0;
+  }
+  .bar {
+    display: none;
+  }
+  .welcom {
+    display: none;
+  }
+  .header {
+    position: relative;
+  }
+
+  .header__body {
+    background-position: -500px 0;
+  }
+  .welcom-phone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .welcom-phone-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .welcom-phone-box button {
+    margin-top: 50px;
+  }
+  .header__linear {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .nav {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000000cc;
+    transition: all 0.5s;
+    z-index: 2;
+
+  }
+  .nav.active {
+    top: 0;
+  }
+  .nav a {
+    font-size: 30px;
+  }
+  .byrger {
+    position: relative;
+    z-index: 2;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .byrger:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+  }
+  .byrger::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+  }
+
+  .byrger span {
+    position: absolute;
+    /* transform: translate(0, 9px); */
+    top: 9px;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  .logo img {
+    width: 50px;
+  }
+  .history__subtitle {
+    width: 300px;
+  }
+  .history-photo {
+    width: 200px;
+    height: 400px;
+  }
+  .img-1 {
+    transform: translate(50px, -100px);
+  }
+  .img-2 {
+    transform: translate(0px, -50px);
+  }
+  .img-3 {
+    transform: translate(-80px, 0px);
+  }
+  .img-4 {
+    transform: translate(80px, 80px);
+  }
+  .section-zacaz__body {
+    flex-direction: column;
+    padding: 0 30px;
+  }
+  .zakaz__text h2 {
+    font-size: 30px;
+  }
+  .zakaz__text p {
+    font-size: 24px;
+  }
+
+  .ourdishes__box {
+    flex-direction: column;
+    gap: 100px;
+  }
+  .burger {
+    flex-direction: column;
+    gap: 70px;
+  }
+  .burger__price {
+  }
+  .vector {
+    display: none;
+  }
+  .burger__price p {
+    font-size: 22px;
+  }
+  .menu__body {
+    background-position: 900px 0;
+  }
+  .galery_box_1 {
+    display: block;
+  }
+  .galery_box_2 {
+    display: block;
+  }
+  .galery-photo-1{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+
+  }
+
+  .galery-photo-2 {
+    
+  }
+  .galery-photo-3 {
+    width: 100%;
+    overflow: hidden;
+  }
+  .section-galery {
+    width: 100%;
+    
+  }
+  .galery__body {
+    display: block;
+    text-align: center;
+  }
+  .galeryPhoto {
+    margin-bottom: 20px ;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+
+  .menu__kard {
+    display: block;
+    width: 370px;
+    height: 520px;
+    margin: 0 auto;
+    
+    
+    
+  }
+
+  .kard {
+    margin-bottom: 10px;
+    margin: 0 auto;
+
+  }
+  .pizza {
+    width: 100%;
+  }
+  .pizza img {
+
+  }
+  .section-final {
+    width: 100%;
+    height: 600px;
+  }
+  .final {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
 }

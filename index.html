@@ -9,91 +9,258 @@
     <script src="index.js" defer></script>
   </head>
   <body>
-    <header class="header">
-      <nav class="nav">
-        <div class="logo">
-          <div class="square"></div>
-          <div class="square2"></div>
-        </div>
-        <div class="nav-bar">
-          <div class="nav-bar__menu">
-            <ul class="nav-bar__menu-list">
-              <li class="nav-bar__menu-link"><a href="#">ГЛАВНАЯ</a></li>
-              <li class="nav-bar__menu-link"><a href="#">МЕНЮ</a></li>
-              <li class="nav-bar__menu-link"><a href="#">О НАС</a></li>
-              <li class="nav-bar__menu-link"><a href="#">БРОНЬ</a></li>
-            </ul>
+    <div class="wrapper">
+      <header class="header" id="header">
+        <div class="container">
+          <div class="header__body">
+            <div class="header__linear">
+              <div class="logo">
+                <img src="img/LOGO.png" alt="" />
+              </div>
+              <div class="nav-bar">
+                <nav class="nav">
+                  <a href="#header">ГЛАВНАЯ</a>
+                  <a href="#menu">МЕНЮ</a>
+                  <a href="#onas">О НАС</a>
+                  <a href="#zakaz">БРОНЬ</a>
+                </nav>
+                <div class="byrger">
+                  <span></span>
+                </div>
+                <div class="bar">
+                  <div class="bar__basket">
+                    <img src="img/basket.png" alt="" />
+                  </div>
+                  <div class="line"></div>
+                  <div class="contact">
+                    <a href="#"
+                      ><img src="img/phone.png" alt="" />+999-888-76-54</a
+                    >
+
+                    <p>
+                      Свяжитесь с нами для <br />
+                      бронирования
+                    </p>
+                  </div>
+                  <button class="button">ЗАКАЗ СТОЛИКА</button>
+                </div>
+              </div>
+            </div>
+            <div class="welcom">
+              <h1 class="title">Добро пожаловать в</h1>
+              <h2 class="title" style="font-size: 80px">Наш ресторан</h2>
+              <p class="welcom__text">ДОМ ЛУЧШЕЙ ЕДЫ</p>
+              <button class="button">VIEW MENU</button>
+            </div>
+            <div class="welcom-phone">
+              <div class="welcom-phone-box">
+                <h1 class="title" style="font-size: 30px">Добро пожаловать</h1>
+                <h2 class="title" style="font-size: 40px">В наш ресторан</h2>
+                <p class="welcom-phone__text" style="font-size: 15px">
+                  ДОМ ЛУЧШЕЙ ЕДЫ
+                </p>
+                <button class="button">МЕНЮ</button>
+              </div>
+            </div>
           </div>
-          <div class="nav-bar__basket">
-            <a href="#"><img src="img/basket.png" alt="" /></a>
-          </div>
-          <div class="line"></div>
-          <div class="phone">
-            <img src="img/phone.png" alt="" />
-            <span>+999-888-76-54</span>
-            <p>
-              Свяжитесь с нами для <br />
-              бронирования
-            </p>
-          </div>
-          <button class="button nav-bar__button">ЗАКАЗ СТОЛИКА</button>
         </div>
-        <div class="burger">
-          <span></span>
+      </header>
+      <main class="main">
+        <div class="container">
+          <section class="section-card">
+            <div class="card-box">
+              <div class="card">
+                <img src="img/Mask Group.png" alt="" />
+                <h5>Магическая <span>Атмосфера</span></h5>
+                <p>
+                  В нашем заведении царит магическая атмосфера наполненная
+                  вкусными ароматами
+                </p>
+              </div>
+              <div class="card">
+                <img src="img/Mask Group.png" alt="" />
+                <h5>Лучшее качество <span>Еды</span></h5>
+                <p>
+                  Качество нашей <br />
+                  Еды - отменное!
+                </p>
+              </div>
+              <div class="card">
+                <img src="img/Mask Group.png" alt="" />
+                <h5>Недорогая <span>Еда</span></h5>
+                <p>
+                  Стоимость нашей Еды зависит только от ее количества. Качество
+                  всегда на высоте!
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="section-history">
+            <div class="history">
+              <h2 class="history__title">
+                Наша <span style="color: #d67e34">История</span>
+              </h2>
+              <p class="history__subtitle">
+                Как и у любого другого самобытного места, у нас есть своя,
+                особая история. Идея ресторана пришла основателям неожиданно. Во
+                время прогулки по лесу создатель нашего ресторана застрял в
+                сотнях километров от ближайшего населенного пункта. Вдали от
+                цивилизации и связи им пришлось навремя обустровать себе
+                нехитрый быт, добывать и готовить себе еду.
+              </p>
+              <div class="box-current">
+                <div class="current">
+                  <p>93</p>
+                  <span>Напитки</span>
+                </div>
+                <div class="current">
+                  <p>206</p>
+                  <span>Еда</span>
+                </div>
+                <div class="current">
+                  <p>71</p>
+                  <span>Закуски</span>
+                </div>
+              </div>
+            </div>
+            <div class="history-photo">
+              <img src="img/history_fon.png" class="img-1" alt="" />
+              <img src="img/history_tort.png" class="img-2" alt="" />
+              <img src="img/233] 1.png" class="img-3" alt="" />
+              <img src="img/255 1.png" class="img-4" alt="" />
+            </div>
+          </section>
+          <section class="section-zakaz" id="zakaz">
+            <div class="section-zacaz__body">
+              <div class="zakaz__text">
+                <h2>Отпразднуйте в одном из самых лучших ресторанов.</h2>
+                <p>Только в этом месяце бизнес-ланч от 250 ₽</p>
+              </div>
+              <button class="button">ЗАКАЗ СТОЛИКА</button>
+            </div>
+          </section>
+          <section class="ourdishes">
+            <h2 class="title dishes__title">
+              <span style="color: black">Наши</span> Блюда
+            </h2>
+            <div class="ourdishes__box">
+              <div class="pizza"><img src="img/pizza.png" alt="" /></div>
+              <div class="burger">
+                <div class="burger__price">
+                  <img src="img/burger.png" alt="" />
+                  <p>Гамбургер мини</p>
+                  <img class="vector" src="img/Vector.png" alt="" />
+                  <span>220 ₽</span>
+                </div>
+                <div class="burger__price">
+                  <img src="img/burger.png" alt="" />
+                  <p>Гамбургер мини</p>
+                  <img class="vector" src="img/Vector.png" alt="" />
+                  <span>220 ₽</span>
+                </div>
+                <div class="burger__price">
+                  <img src="img/burger.png" alt="" />
+                  <p>Гамбургер мини</p>
+                  <img class="vector" src="img/Vector.png" alt="" />
+                  <span>220 ₽</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section-menu" id="menu">
+            <div class="menu__body">
+              <h2 class="menu-title">Наше меню</h2>
+              <div class="box-menu-body">
+                <div class="box-menu">
+                  <div class="menu__kard">
+                    <div class="kard">
+                      <img src="img/img-bar.jpg" alt="" />
+                      <p>Гамбургер макси</p>
+                      <span>Максимально толстый слой мяса</span>
+                      <button class="button button_">ЗАКАЗАТЬ</button>
+                      <div class="disk">420</div>
+                    </div>
+                    <div class="kard">
+                      <img src="img/img-bar.jpg" alt="" />
+                      <p>Гамбургер макси</p>
+                      <span>Максимально толстый слой мяса</span>
+                      <button class="button button_">ЗАКАЗАТЬ</button>
+                      <div class="disk">420</div>
+                    </div>
+                    <div class="kard">
+                      <img src="img/img-bar.jpg" alt="" />
+                      <p>Гамбургер макси</p>
+                      <span>Максимально толстый слой мяса</span>
+                      <button class="button button_">ЗАКАЗАТЬ</button>
+                      <div class="disk">420</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section-comment">
+            <div class="comment__body">
+              <p>
+                Я надолго запомню мой День рождения, проведённый в этом
+                ресторане! Кусочек родной Армении!!! Отдельное спасибо за
+                комплепент в виде фруктовой тарелки. Будем рекомендовать этот
+                ресторан своим друзьям и родственникам также за рубежом,
+                путешествующих в Санкт-Петербург!!!
+              </p>
+              <img
+                src="img/comment_avtor.jpg"
+                style="border-radius: 50%"
+                alt=""
+              />
+              <span><b>Посетитель</b></span>
+              <span>Николай</span>
+            </div>
+          </section>
+          <section class="section-galery" style="background-color: #fff">
+            <div class="galery__body">
+              <h5 class="title">
+                <span style="color: black">Галерея</span> Блюд
+              </h5>
+              <div class="galery_box_1">
+                <div class="galery-photo-1">
+                  <img class="galeryPhoto" src="img/рюмки.jpg" alt="" />
+                </div>
+                <div class="galery-photo-2">
+                  <img class="galeryPhoto" src="img/кофе.jpg" alt="" />
+                </div>
+                <div class="galery-photo-3">
+                  <img class="galeryPhoto" src="img/Чашка.jpg" alt="" />
+                </div>
+              </div>
+              <div class="galery_box_2">
+                <div class="galery-photo-2">
+                  <img class="galeryPhoto" src="img/кофе.jpg" alt="" />
+                </div>
+
+                <div class="galery-photo-1">
+                  <img class="galeryPhoto" src="img/Чашка.jpg" alt="" />
+                </div>
+                <div class="galery-photo-3">
+                  <img class="galeryPhoto" src="img/рюмки.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section-cooks" id="onas">
+            <h2 class="title"><span style="color: #000">Наши</span> Повора</h2>
+            <div class="cooks__photo">
+              <img src="img/cook-196932_1920 1.jpg" alt="" />
+              <img src="img/cook.jpg" alt="" />
+              <img src="img/cook-4.jpg" alt="" />
+            </div>
+          </section>
+          <section class="section-final">
+            <img class="final" src="img/final.jpg" alt="" />
+          </section>
         </div>
-      </nav>
-      <div class="welcom">
-        <h1 class="title">Добро пожаловать в</h1>
-        <h2 class="title" style="font-size: 80px">Наш ресторан</h2>
-        <div class="home-class-foot">
-          <div class="linear"></div>
-          <p>ДОМ ЛУЧШЕЙ ЕДЫ</p>
-          <div class="linear2"></div>
-        </div>
-        <button class="button">VIEW MENU</button>
-      </div>
-      <div class="welcom-phone">
-        <h1 class="title title-phone" style="font-size: 25px">
-          Добро пожаловать
-        </h1>
-        <h2 class="title title-phone2" style="font-size: 30px">
-          В наш ресторан
-        </h2>
-        <p>ДОМ ЛУЧШЕЙ ЕДЫ</p>
-        <div class="button button-phone">МЕНЮ</div>
-      </div>
-      <div class="header__kard">
-        <div class="kard">
-          <img src="img/Mask Group.png" alt="" />
-          <div class="kard__menu-text">
-            Магическая <span style="color: #bc9060">Атмосфера</span>
-          </div>
-          <p>
-            В нашем заведении царит магическая атмосфера наполненная вкусными
-            ароматами
-          </p>
-        </div>
-        <div class="kard">
-          <img src="img/Mask Group.png" alt="" />
-          <div class="kard__menu-text">
-            Лучшее качество <span style="color: #bc9060">Еды</span>
-          </div>
-          <p>
-            Качество нашей <br />
-            Еды - отменное!
-          </p>
-        </div>
-        <div class="kard">
-          <img src="img/Mask Group.png" alt="" />
-          <div class="kard__menu-text">
-            Недорогая <span style="color: #bc9060">Еда</span>
-          </div>
-          <p>
-            Стоимость нашей Еды зависит только от ее количества. Качество всегда
-            на высоте!
-          </p>
-        </div>
-      </div>
-    </header>
+      </main>
+    </div>
   </body>
 </html>

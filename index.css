@@ -82,171 +82,541 @@ font-family: 'Open Sans', sans-serif;  */
 /* TINOS-----font-family: 'Tinos', serif; */
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: #d4d4d4;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.wrapper {
+}
+.header {
 }
 
-.header {
-  max-width: 1440px;
-  height: 1021px;
-  padding: 50px 20px;
+.header__body {
   background-image: url(./img/header_img.jpg);
   background-repeat: no-repeat;
-  margin: 0 auto;
-  /* border: 1px solid #000; */
-  position: relative;
+  width: 100%;
+  height: 800px;
 }
-.nav {
+/* СЕЙЧАС БУДЕТ ИДТИ НАВИГАЦИЯ С ЛОГО И КОНТАКТАМИ */
+.header__linear {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  position: relative;
+  top: 25px;
 }
 .logo {
-  display: flex;
-}
-.square {
-  width: 48.06px;
-  height: 48.06px;
-  border: 3px solid #ff7400;
-  transform: rotate(45deg);
-}
-.square2 {
-  width: 48.06px;
-  height: 48.06px;
-  border: 3px solid #ff7400;
-  transform: rotate(45deg) translate(-10px, 10px);
 }
 .nav-bar {
   display: flex;
   align-items: center;
   gap: 20px;
-  color: #fff;
 }
-.nav-bar__menu {
-}
-.nav-bar__menu-list {
+.nav {
   display: flex;
   gap: 20px;
-}
-.nav-bar__menu-link {
   font-weight: 700;
 }
-
-.nav-bar__menu-link a {
+.nav a {
   color: #fff;
-  font-size: 17px;
-  font-family: "Open Sans", sans-serif;
 }
-
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.bar__basket {
+}
 .line {
   width: 51px;
-  border: 1px solid #ffffff;
+  height: 1px;
+  background-color: #fff;
   transform: rotate(90deg);
 }
-.phone {
-  text-align: center;
-  line-height: 20px;
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
 }
-.phone span {
+.contact a {
   color: #fff;
   font-size: 18px;
   font-weight: 700;
 }
-
+.contact p {
+  font-size: 14px;
+}
 .button {
   width: 157px;
   height: 47px;
   background-color: #ff7400;
   color: #fff;
-  font-size: 14px;
 }
+/* ЗАГОЛОВОК HEADERS */
 
 .welcom {
-  font-family: "Tinos", serif;
-  color: #fff;
   display: inline-flex;
-  align-items: center;
   flex-direction: column;
-  gap: 15px;
-  margin: 220px 150px;
-  /* margin: 200px; */
-  
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  transform: translate(150px, 270px);
 }
 
-.welcom div {
-  display: flex;
-  align-items: center;
-  gap: 5px;
+.welcom-phone {
+  display: none;
 }
 
 .title {
   color: #d67e35;
   font-family: "Tinos", serif;
   font-size: 50px;
-  font-style: normal;
   font-weight: 400;
 }
-
-.linear {
-  width: 61px;
-  height: 2px;
-  background-color: #fff;
-}
-
-.linear2 {
-  width: 61px;
-  height: 2px;
-  background-color: #fff;
-}
-.home-class-foot p {
+.welcom__text {
+  color: #fff;
+  position: relative;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
 
-.welcom-phone {
-  display: none;
+.welcom-phone__text {
+  color: #fff;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.welcom__text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -70px;
+  width: 61px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.welcom__text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -70px;
+  width: 61px;
+  height: 2px;
+  background-color: #fff;
+}
+/* ------------------------------------------------------------------------------------SECTION--------CARD */
+
+.card-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+.card {
+  width: 349px;
+  height: 328px;
+  background-color: #fff;
+  box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transform: translate(0px, -100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.card h5 {
+  font-family: "Tinos", serif;
+  color: #2c2c2c;
+  font-size: 26px;
+}
+.card p {
+  margin-top: 20px;
+  font-family: "Tinos", serif;
+  color: #656363;
+  font-size: 26px;
+}
+
+.card span {
+  color: #bc9060;
+}
+
+/* ----------------------------------------------HISTORY-------------------------- */
+
+.section-history {
+  background-color: #fff;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 200px;
+  padding-bottom: 130px;
+}
+.history {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 33%;
+}
+.history__title {
+  font-family: "Tinos", serif;
+  font-size: 54px;
+}
+.history__subtitle {
+  margin-top: 30px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  color: #656363;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.box-current {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.current {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.current p {
+  color: #bc9060;
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.current span {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ------------------------------------------HISTORY PHOTO------------------------------------------------ */
+
+.history-photo {
+  position: relative;
+  width: 300px;
+  height: 400px;
   
 }
 
-.header__kard {
+.history-photo img {
   position: absolute;
   top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.img-1 {
+  transform: translate(0px, -50px);
+}
+.img-2 {
+  transform: translate(0px, -50px);
+}
+.img-3 {
+  transform: translate(-180px, 0px);
+}
+.img-4 {
+  transform: translate(120px, 100px);
+}
+/* -----------------------------------------------ZAKAZ---------------------------------------------------------- */
+
+.section-zakaz {
+  width: 100%;
+  height: 357px;
+  background: url(./img/zakaz.jpg) no-repeat;
+}
+.section-zacaz__body {
+  width: 100%;
+  height: 357px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #080808e0;
+}
+.zakaz__text {
+  max-width: 600px;
+  text-align: center;
+}
+.zakaz__text h2 {
+  color: #d67e34;
+  font-size: 52px;
+  font-family: "Tinos", serif;
+}
+.zakaz__text p {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+}
+.button {
+}
+/* ------------------------------------------------------БЛюда */
+.ourdishes {
+  width: 100%;
+
+  text-align: center;
+  background-color: #fff;
+}
+.dishes__title {
+  padding-top: 120px;
+}
+
+.title {
+}
+
+.ourdishes__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  gap: 20px;
+  margin-top: 140px;
+  padding-bottom: 150px;
+}
+.pizza {
+  width: 474px;
+  height: 474px;
+}
+.pizza img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 27px;
+}
+.burger__price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.burger__price p {
+  font-family: "Tinos", serif;
+  font-size: 26px;
+}
+
+.burger__price span {
+  font-family: "Tinos", serif;
+  font-size: 26px;
+}
+
+/* ------------------------------------------menu---------------------------------------- */
+
+.section-menu {
+}
+.menu__body {
+  width: 100%;
+  height: 1036px;
+  background-image: url(./img/bar.jpg);
+  text-align: center;
+  padding-top: 100px;
+  position: relative;
+}
+
+.menu-title {
+  font-family: "Tinos", serif;
+  font-size: 54px;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.box-menu-body {
+  position: absolute;
+  top: 40px;
   left: 0;
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  
+}
+.box-menu {
+  max-width: 1200px;
+  display: flex;
+  /* border: 10px solid #920a0a; */
+  position: relative;
+  overflow: hidden;
+}
 
+.menu__kard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
 }
 
 .kard {
-  width: 349px;
-  height: 328px;
-  padding: 30px;
-  background: #fff;
-  box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  height: 510px;
+  flex-shrink: 0;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 20px;
+  position: relative;
 }
-
-.kard__menu-text {
-  color: #2C2C2C;
-  font-family: 'Tinos', serif;
-  font-size: 26px;
-
+.kard img {
+  border-radius: 50%;
 }
 
 .kard p {
-  color: #656363;
-  text-align: center;
+  font-family: "Tinos", serif;
   font-size: 26px;
-  font-weight: 400;
-  font-family: 'Tinos', serif;
+}
 
+.kard span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.menu__kard-hidden {
+  display: none;
+}
+.disk {
+  color: #fff;
+  font-size: 30px;
+  background-color: #d67e34;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 7px solid #fefefe;
+  font-family: fantasy;
+  position: absolute;
+  top: 38%;
+  right: 18%;
+}
+.button_ {
+  background: #d67e34;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------------------------SECTION --------------_COMMENT */
+
+.comment__body {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+.comment__body p {
+  max-width: 920px;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+/* ---------------------------------------GALERY-------------------------- */
+
+.section-galery {
+  padding: 100px 0;
+}
+.galery__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.galery_box_1 {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.galery_box_2 {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.galery-photo-1 {
+}
+.galery-photo-2 {
+}
+.galery-photo-3 {
+}
+
+/* SECTION------COOKS------------------------------------------- */
+
+.section-cooks {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cooks__photo {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.section-final {
+  width: 100%;
+  height: 1604px;
+}
+.section-final img {
+  width: 100%;
+
+  object-fit: cover;
 }

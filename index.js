@@ -1,3 +1,3 @@
-document.querySelector('.burger').addEventListener('click', e => {
-    document.querySelector('.nav-bar__menu').classList.toggle('activeMenu')
+document.querySelector('.byrger').addEventListener('click', function () {
+    document.querySelector('.nav').classList.toggle('active')
 })
